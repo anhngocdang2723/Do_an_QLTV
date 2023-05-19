@@ -8,13 +8,3 @@ D:\Edu\2.2\Do_An_DotNet\Quan_ly_thu_vien\Save\bin\Debug\Save.exe
 D:\Edu\2.2\Do_An_DotNet\Quan_ly_thu_vien\Save\bin\Debug\Save.pdb
 D:\Edu\2.2\Do_An_DotNet\Quan_ly_thu_vien\Save\obj\Debug\Save.exe
 D:\Edu\2.2\Do_An_DotNet\Quan_ly_thu_vien\Save\obj\Debug\Save.pdb
-C:\Users\anhng\OneDrive\Máy tính\Do_an_QLTV\Quan_ly_thu_vien\Save\bin\Debug\Save.exe.config
-C:\Users\anhng\OneDrive\Máy tính\Do_an_QLTV\Quan_ly_thu_vien\Save\bin\Debug\Save.exe
-C:\Users\anhng\OneDrive\Máy tính\Do_an_QLTV\Quan_ly_thu_vien\Save\bin\Debug\Save.pdb
-C:\Users\anhng\OneDrive\Máy tính\Do_an_QLTV\Quan_ly_thu_vien\Save\obj\Debug\Save.csproj.AssemblyReference.cache
-C:\Users\anhng\OneDrive\Máy tính\Do_an_QLTV\Quan_ly_thu_vien\Save\obj\Debug\Save.csproj.SuggestedBindingRedirects.cache
-C:\Users\anhng\OneDrive\Máy tính\Do_an_QLTV\Quan_ly_thu_vien\Save\obj\Debug\Save.Properties.Resources.resources
-C:\Users\anhng\OneDrive\Máy tính\Do_an_QLTV\Quan_ly_thu_vien\Save\obj\Debug\Save.csproj.GenerateResource.cache
-C:\Users\anhng\OneDrive\Máy tính\Do_an_QLTV\Quan_ly_thu_vien\Save\obj\Debug\Save.csproj.CoreCompileInputs.cache
-C:\Users\anhng\OneDrive\Máy tính\Do_an_QLTV\Quan_ly_thu_vien\Save\obj\Debug\Save.exe
-C:\Users\anhng\OneDrive\Máy tính\Do_an_QLTV\Quan_ly_thu_vien\Save\obj\Debug\Save.pdb
