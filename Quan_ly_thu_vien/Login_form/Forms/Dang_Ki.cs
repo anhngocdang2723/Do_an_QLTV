@@ -44,7 +44,7 @@ namespace Login_form
                     MessageBox.Show("Tiếp tục điền thông tin.","Thông báo",MessageBoxButtons.OK);
 
                     this.Hide();
-                    Dien_Thong_Tin dtt = new Dien_Thong_Tin();
+                    Dien_Thong_Tin dtt=new Dien_Thong_Tin();
                     dtt.Show();
 
                 }

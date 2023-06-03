@@ -36,6 +36,7 @@
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -47,53 +48,73 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ADDBOOK.cs">
+    <Compile Include="Forms\AddBooks.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ADDBOOK.Designer.cs">
-      <DependentUpon>ADDBOOK.cs</DependentUpon>
+    <Compile Include="Forms\AddBooks.Designer.cs">
+      <DependentUpon>AddBooks.cs</DependentUpon>
     </Compile>
-    <Compile Include="DanhSachTK.cs">
+    <Compile Include="Forms\UserBorrowed.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DanhSachTK.Designer.cs">
-      <DependentUpon>DanhSachTK.cs</DependentUpon>
+    <Compile Include="Forms\UserBorrowed.Designer.cs">
+      <DependentUpon>UserBorrowed.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\UserReturned.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\UserReturned.Designer.cs">
+      <DependentUpon>UserReturned.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ViewUsers_Accounts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ViewUsers_Accounts.Designer.cs">
+      <DependentUpon>ViewUsers_Accounts.cs</DependentUpon>
     </Compile>
     <Compile Include="dbms.cs" />
-    <Compile Include="DoiMatKhau.cs">
+    <Compile Include="Forms\ChangePass.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DoiMatKhau.Designer.cs">
-      <DependentUpon>DoiMatKhau.cs</DependentUpon>
+    <Compile Include="Forms\ChangePass.Designer.cs">
+      <DependentUpon>ChangePass.cs</DependentUpon>
     </Compile>
     <Compile Include="Gradient.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Main.cs">
+    <Compile Include="linq.cs">
+      <DependentUpon>linq.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="linq.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>linq.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Main.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Main.Designer.cs">
+    <Compile Include="Forms\Main.Designer.cs">
       <DependentUpon>Main.cs</DependentUpon>
     </Compile>
-    <Compile Include="Personal_Information.cs">
+    <Compile Include="Forms\Personal_Information.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Personal_Information.Designer.cs">
+    <Compile Include="Forms\Personal_Information.Designer.cs">
       <DependentUpon>Personal_Information.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="QuanLyMuon.cs">
+    <Compile Include="Forms\Borrowed_Manager.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="QuanLyMuon.Designer.cs">
-      <DependentUpon>QuanLyMuon.cs</DependentUpon>
+    <Compile Include="Forms\Borrowed_Manager.Designer.cs">
+      <DependentUpon>Borrowed_Manager.cs</DependentUpon>
     </Compile>
-    <Compile Include="Themnguoidoc.cs">
+    <Compile Include="Forms\Returned_Manager.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Themnguoidoc.Designer.cs">
-      <DependentUpon>Themnguoidoc.cs</DependentUpon>
+    <Compile Include="Forms\Returned_Manager.Designer.cs">
+      <DependentUpon>Returned_Manager.cs</DependentUpon>
     </Compile>
     <Compile Include="Timnguoidoc.cs">
       <SubType>Form</SubType>
@@ -101,16 +122,16 @@
     <Compile Include="Timnguoidoc.Designer.cs">
       <DependentUpon>Timnguoidoc.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserBorrowBook.cs">
+    <Compile Include="Forms\UserBorrowBook.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UserBorrowBook.Designer.cs">
+    <Compile Include="Forms\UserBorrowBook.Designer.cs">
       <DependentUpon>UserBorrowBook.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserReturnBook.cs">
+    <Compile Include="Forms\UserReturnBook.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UserReturnBook.Designer.cs">
+    <Compile Include="Forms\UserReturnBook.Designer.cs">
       <DependentUpon>UserReturnBook.cs</DependentUpon>
     </Compile>
     <Compile Include="XEMSACH.cs">
@@ -119,17 +140,23 @@
     <Compile Include="XEMSACH.Designer.cs">
       <DependentUpon>XEMSACH.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="ADDBOOK.resx">
-      <DependentUpon>ADDBOOK.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\AddBooks.resx">
+      <DependentUpon>AddBooks.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DoiMatKhau.resx">
-      <DependentUpon>DoiMatKhau.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\ChangePass.resx">
+      <DependentUpon>ChangePass.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Main.resx">
+    <EmbeddedResource Include="Forms\Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Personal_Information.resx">
+    <EmbeddedResource Include="Forms\Personal_Information.resx">
       <DependentUpon>Personal_Information.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UserBorrowed.resx">
+      <DependentUpon>UserBorrowed.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UserReturned.resx">
+      <DependentUpon>UserReturned.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -139,26 +166,35 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="QuanLyMuon.resx">
-      <DependentUpon>QuanLyMuon.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Themnguoidoc.resx">
-      <DependentUpon>Themnguoidoc.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\Borrowed_Manager.resx">
+      <DependentUpon>Borrowed_Manager.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Timnguoidoc.resx">
       <DependentUpon>Timnguoidoc.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserBorrowBook.resx">
+    <EmbeddedResource Include="Forms\UserBorrowBook.resx">
       <DependentUpon>UserBorrowBook.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserReturnBook.resx">
+    <EmbeddedResource Include="Forms\UserReturnBook.resx">
       <DependentUpon>UserReturnBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ViewUsers_Accounts.resx">
+      <DependentUpon>ViewUsers_Accounts.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="XEMSACH.resx">
       <DependentUpon>XEMSACH.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="App.config" />
+    <None Include="linq.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>linq.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="linq.dbml.layout">
+      <DependentUpon>linq.dbml</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -178,24 +214,35 @@
   <ItemGroup>
     <Content Include="Resources\216170_delete_icon.png" />
     <Content Include="Resources\add book.gif" />
+    <None Include="Resources\add book2.gif" />
     <Content Include="Resources\addstudent.gif" />
     <Content Include="Resources\addstudent1.gif" />
+    <None Include="Resources\addstudent2.gif" />
     <Content Include="Resources\books_library_shelves_138556_1920x1080.jpg" />
     <Content Include="Resources\icons8-add-book-48.png" />
+    <None Include="Resources\icons8-add-book-482.png" />
     <Content Include="Resources\icons8-add-user-male-50.png" />
     <Content Include="Resources\icons8-book-philosophy-50.png" />
     <Content Include="Resources\icons8-books-50.png" />
     <Content Include="Resources\icons8-exit-sign-50.png" />
     <Content Include="Resources\icons8-return-book-50.png" />
+    <None Include="Resources\icons8-return-book-502.png" />
     <Content Include="Resources\icons8-student-male-100.png" />
     <Content Include="Resources\icons8-student-male-1000 %281%29.png" />
+    <None Include="Resources\icons8-student-male-1000.png" />
     <Content Include="Resources\icons8-student-male-50.png" />
+    <None Include="Resources\icons8-student-male-501.png" />
     <Content Include="Resources\icons8-view-50.png" />
     <Content Include="Resources\icons8-view-501.png" />
     <Content Include="Resources\icons8-view-502.png" />
+    <None Include="Resources\image_processing20191025-19942-14gi0n7.gif" />
     <Content Include="Resources\motivation1.jpg" />
+    <None Include="Resources\motivation12.jpg" />
     <Content Include="Resources\remove.png" />
     <Content Include="Resources\view book gif1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

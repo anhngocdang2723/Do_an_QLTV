@@ -110,6 +110,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="App - Copy.config" />
     <None Include="packages.config" />
@@ -158,6 +159,12 @@
       <Project>{fea29f7f-21f8-4d1a-ab91-2cd90840e8e7}</Project>
       <Name>Save</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-student-male-1000.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\addstudent.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

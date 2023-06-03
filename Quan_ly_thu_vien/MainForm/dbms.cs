@@ -12,7 +12,7 @@ namespace Menu_Form
 {
     internal class dbms
     {
-        public string str = @"Data Source=MAYTINH\SQLEXPRESS;Initial Catalog=QuanLyThuVien;Integrated Security=True";
+        public string str = @"Data Source=DESKTOP-Q69S8H6;Initial Catalog=Quan_ly_thu_vien;Integrated Security=True";
         public SqlConnection cn;
         public SqlCommand cmd;
         public SqlDataAdapter adapter = new SqlDataAdapter();
@@ -27,7 +27,7 @@ namespace Menu_Form
             try
             {
                 cmd = cn.CreateCommand();
-                cmd.CommandText = "select * from Qlbook";
+                cmd.CommandText = "select * from Books";
                 adapter.SelectCommand = cmd;
 
                 table.Clear();
@@ -46,7 +46,7 @@ namespace Menu_Form
             try
             {
                 cmd = cn.CreateCommand();
-                cmd.CommandText = "select * from Qlbook where ten_sach=@ten";
+                cmd.CommandText = "select * from Books where name=@ten";
                 cmd.Parameters.AddWithValue("@ten", value);
 
                 adapter.SelectCommand = cmd;
@@ -61,19 +61,19 @@ namespace Menu_Form
             }
         }
 
-        public void insert(string ten, int soluong, string tgia, string tl, string ngayph, string gia)
+        public void insert(int id,string ten,  string tgia, string tt, int ngayph, int gia)
         {
             try
             {
                 cmd = cn.CreateCommand();
                 //parameter
-                string insert = "exec nhap2 @name,@count,@writer,@type,@date,@cost";
+                string insert = "insert into Books values (@id,@name,@title,@writer,@date,@sl)";
+                cmd.Parameters.AddWithValue("@id", id);
                 cmd.Parameters.AddWithValue("@name", ten);
-                cmd.Parameters.AddWithValue("@count", soluong);
                 cmd.Parameters.AddWithValue("@writer", tgia);
-                cmd.Parameters.AddWithValue("@type", tl);
+                cmd.Parameters.AddWithValue("@title", tt);
                 cmd.Parameters.AddWithValue("@date", ngayph);
-                cmd.Parameters.AddWithValue("@cost", gia);
+                cmd.Parameters.AddWithValue("@sl", gia);
                 cmd.CommandText = insert;
                 cmd.ExecuteNonQuery();
             }
@@ -84,20 +84,19 @@ namespace Menu_Form
             }
         }
 
-        public void update(int id, string ten, int soluong, string tgia, string tl, string ngayph, string gia)
+        public void update(int id, string ten, string title, string tgia, int nam, int sl)
         {
             try
             {
-                string update = "update Qlbook set ten_sach=@name,so_luong=@count,tac_gia=@writer,the_loai=@type,ngay_phat_hanh=@date,gia=@cost where ID_sach=@id";
+                string update = "update Books set name=@name,title=@title,author=@writer,year_published=@year,quantity=@sl where bookID=@id";
                 cmd = new SqlCommand(update, cn);
                 //parameter
                 cmd.Parameters.AddWithValue("@id", id);
                 cmd.Parameters.AddWithValue("@name", ten);
-                cmd.Parameters.AddWithValue("@count", soluong);
+                cmd.Parameters.AddWithValue("@title",title);
                 cmd.Parameters.AddWithValue("@writer", tgia);
-                cmd.Parameters.AddWithValue("@type", tl);
-                cmd.Parameters.AddWithValue("@date", ngayph);
-                cmd.Parameters.AddWithValue("@cost", gia);
+                cmd.Parameters.AddWithValue("@year",nam);
+                cmd.Parameters.AddWithValue("@sl",sl);
                 //thực thi
                 cmd.ExecuteNonQuery();
             }
@@ -112,7 +111,7 @@ namespace Menu_Form
         {
             try
             {
-                cmd = new SqlCommand("delete Qlbook where ID_sach=@id", cn);
+                cmd = new SqlCommand("delete Books where bookID=@id", cn);
                 cmd.Parameters.AddWithValue("@id", id);
                 cmd.ExecuteNonQuery();
             }

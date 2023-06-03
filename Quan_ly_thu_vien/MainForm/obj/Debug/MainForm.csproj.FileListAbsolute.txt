@@ -22,6 +22,55 @@ D:\Edu\2.2\Do_An_DotNet\Quan_ly_thu_vien\MainForm\obj\Debug\MainForm.XEMSACH.res
 D:\Edu\2.2\Do_An_DotNet\Quan_ly_thu_vien\MainForm\obj\Debug\MainForm.UserBorrowBook.resources
 D:\Edu\2.2\Do_An_DotNet\Quan_ly_thu_vien\MainForm\obj\Debug\MainForm.UserReturnBook.resources
 D:\Edu\2.2\Do_An_DotNet\Quan_ly_thu_vien\MainForm\obj\Debug\MainForm.Personal_Information.resources
+C:\Users\PC\Music\Do_an_QLTV-master\Do_an_QLTV-master\Quan_ly_thu_vien\MainForm\bin\Debug\MainForm.exe.config
+C:\Users\PC\Music\Do_an_QLTV-master\Do_an_QLTV-master\Quan_ly_thu_vien\MainForm\bin\Debug\MainForm.exe
+C:\Users\PC\Music\Do_an_QLTV-master\Do_an_QLTV-master\Quan_ly_thu_vien\MainForm\bin\Debug\MainForm.pdb
+C:\Users\PC\Music\Do_an_QLTV-master\Do_an_QLTV-master\Quan_ly_thu_vien\MainForm\bin\Debug\Save.exe
+C:\Users\PC\Music\Do_an_QLTV-master\Do_an_QLTV-master\Quan_ly_thu_vien\MainForm\bin\Debug\Save.pdb
+C:\Users\PC\Music\Do_an_QLTV-master\Do_an_QLTV-master\Quan_ly_thu_vien\MainForm\bin\Debug\Save.exe.config
+C:\Users\PC\Music\Do_an_QLTV-master\Do_an_QLTV-master\Quan_ly_thu_vien\MainForm\obj\Debug\MainForm.csproj.AssemblyReference.cache
+C:\Users\PC\Music\Do_an_QLTV-master\Do_an_QLTV-master\Quan_ly_thu_vien\MainForm\obj\Debug\MainForm.csproj.SuggestedBindingRedirects.cache
+C:\Users\PC\Music\Do_an_QLTV-master\Do_an_QLTV-master\Quan_ly_thu_vien\MainForm\obj\Debug\MainForm.ADDBOOK.resources
+C:\Users\PC\Music\Do_an_QLTV-master\Do_an_QLTV-master\Quan_ly_thu_vien\MainForm\obj\Debug\MainForm.DoiMatKhau.resources
+C:\Users\PC\Music\Do_an_QLTV-master\Do_an_QLTV-master\Quan_ly_thu_vien\MainForm\obj\Debug\MainForm.Main.resources
+C:\Users\PC\Music\Do_an_QLTV-master\Do_an_QLTV-master\Quan_ly_thu_vien\MainForm\obj\Debug\MainForm.Personal_Information.resources
+C:\Users\PC\Music\Do_an_QLTV-master\Do_an_QLTV-master\Quan_ly_thu_vien\MainForm\obj\Debug\MainForm.Properties.Resources.resources
+C:\Users\PC\Music\Do_an_QLTV-master\Do_an_QLTV-master\Quan_ly_thu_vien\MainForm\obj\Debug\MainForm.QuanLyMuon.resources
+C:\Users\PC\Music\Do_an_QLTV-master\Do_an_QLTV-master\Quan_ly_thu_vien\MainForm\obj\Debug\MainForm.Timnguoidoc.resources
+C:\Users\PC\Music\Do_an_QLTV-master\Do_an_QLTV-master\Quan_ly_thu_vien\MainForm\obj\Debug\MainForm.UserBorrowBook.resources
+C:\Users\PC\Music\Do_an_QLTV-master\Do_an_QLTV-master\Quan_ly_thu_vien\MainForm\obj\Debug\MainForm.UserReturnBook.resources
+C:\Users\PC\Music\Do_an_QLTV-master\Do_an_QLTV-master\Quan_ly_thu_vien\MainForm\obj\Debug\MainForm.XEMSACH.resources
+C:\Users\PC\Music\Do_an_QLTV-master\Do_an_QLTV-master\Quan_ly_thu_vien\MainForm\obj\Debug\MainForm.csproj.GenerateResource.cache
+C:\Users\PC\Music\Do_an_QLTV-master\Do_an_QLTV-master\Quan_ly_thu_vien\MainForm\obj\Debug\MainForm.csproj.CoreCompileInputs.cache
+C:\Users\PC\Music\Do_an_QLTV-master\Do_an_QLTV-master\Quan_ly_thu_vien\MainForm\obj\Debug\MainForm.csproj.CopyComplete
+C:\Users\PC\Music\Do_an_QLTV-master\Do_an_QLTV-master\Quan_ly_thu_vien\MainForm\obj\Debug\MainForm.exe
+C:\Users\PC\Music\Do_an_QLTV-master\Do_an_QLTV-master\Quan_ly_thu_vien\MainForm\obj\Debug\MainForm.pdb
+C:\Users\anhng\OneDrive\Máy tính\Do_an_QLTV-master\Do_an_QLTV-master\Quan_ly_thu_vien\MainForm\bin\Debug\MainForm.exe.config
+C:\Users\anhng\OneDrive\Máy tính\Do_an_QLTV-master\Do_an_QLTV-master\Quan_ly_thu_vien\MainForm\bin\Debug\MainForm.exe
+C:\Users\anhng\OneDrive\Máy tính\Do_an_QLTV-master\Do_an_QLTV-master\Quan_ly_thu_vien\MainForm\bin\Debug\MainForm.pdb
+C:\Users\anhng\OneDrive\Máy tính\Do_an_QLTV-master\Do_an_QLTV-master\Quan_ly_thu_vien\MainForm\bin\Debug\Save.exe
+C:\Users\anhng\OneDrive\Máy tính\Do_an_QLTV-master\Do_an_QLTV-master\Quan_ly_thu_vien\MainForm\bin\Debug\Save.pdb
+C:\Users\anhng\OneDrive\Máy tính\Do_an_QLTV-master\Do_an_QLTV-master\Quan_ly_thu_vien\MainForm\bin\Debug\Save.exe.config
+C:\Users\anhng\OneDrive\Máy tính\Do_an_QLTV-master\Do_an_QLTV-master\Quan_ly_thu_vien\MainForm\obj\Debug\MainForm.csproj.AssemblyReference.cache
+C:\Users\anhng\OneDrive\Máy tính\Do_an_QLTV-master\Do_an_QLTV-master\Quan_ly_thu_vien\MainForm\obj\Debug\MainForm.csproj.SuggestedBindingRedirects.cache
+C:\Users\anhng\OneDrive\Máy tính\Do_an_QLTV-master\Do_an_QLTV-master\Quan_ly_thu_vien\MainForm\obj\Debug\MainForm.Main.resources
+C:\Users\anhng\OneDrive\Máy tính\Do_an_QLTV-master\Do_an_QLTV-master\Quan_ly_thu_vien\MainForm\obj\Debug\MainForm.Personal_Information.resources
+C:\Users\anhng\OneDrive\Máy tính\Do_an_QLTV-master\Do_an_QLTV-master\Quan_ly_thu_vien\MainForm\obj\Debug\MainForm.Properties.Resources.resources
+C:\Users\anhng\OneDrive\Máy tính\Do_an_QLTV-master\Do_an_QLTV-master\Quan_ly_thu_vien\MainForm\obj\Debug\MainForm.Timnguoidoc.resources
+C:\Users\anhng\OneDrive\Máy tính\Do_an_QLTV-master\Do_an_QLTV-master\Quan_ly_thu_vien\MainForm\obj\Debug\MainForm.UserBorrowBook.resources
+C:\Users\anhng\OneDrive\Máy tính\Do_an_QLTV-master\Do_an_QLTV-master\Quan_ly_thu_vien\MainForm\obj\Debug\MainForm.UserReturnBook.resources
+C:\Users\anhng\OneDrive\Máy tính\Do_an_QLTV-master\Do_an_QLTV-master\Quan_ly_thu_vien\MainForm\obj\Debug\MainForm.XEMSACH.resources
+C:\Users\anhng\OneDrive\Máy tính\Do_an_QLTV-master\Do_an_QLTV-master\Quan_ly_thu_vien\MainForm\obj\Debug\MainForm.csproj.GenerateResource.cache
+C:\Users\anhng\OneDrive\Máy tính\Do_an_QLTV-master\Do_an_QLTV-master\Quan_ly_thu_vien\MainForm\obj\Debug\MainForm.csproj.CoreCompileInputs.cache
+C:\Users\anhng\OneDrive\Máy tính\Do_an_QLTV-master\Do_an_QLTV-master\Quan_ly_thu_vien\MainForm\obj\Debug\MainForm.csproj.CopyComplete
+C:\Users\anhng\OneDrive\Máy tính\Do_an_QLTV-master\Do_an_QLTV-master\Quan_ly_thu_vien\MainForm\obj\Debug\MainForm.exe
+C:\Users\anhng\OneDrive\Máy tính\Do_an_QLTV-master\Do_an_QLTV-master\Quan_ly_thu_vien\MainForm\obj\Debug\MainForm.pdb
+C:\Users\anhng\OneDrive\Máy tính\Do_an_QLTV-master\Do_an_QLTV-master\Quan_ly_thu_vien\MainForm\obj\Debug\MainForm.AddBooks.resources
+C:\Users\anhng\OneDrive\Máy tính\Do_an_QLTV-master\Do_an_QLTV-master\Quan_ly_thu_vien\MainForm\obj\Debug\MainForm.ChangePass.resources
+C:\Users\anhng\OneDrive\Máy tính\Do_an_QLTV-master\Do_an_QLTV-master\Quan_ly_thu_vien\MainForm\obj\Debug\MainForm.DanhSachTK.resources
+C:\Users\anhng\OneDrive\Máy tính\Do_an_QLTV-master\Do_an_QLTV-master\Quan_ly_thu_vien\MainForm\obj\Debug\MainForm.Borrowed_Manager.resources
+C:\Users\anhng\OneDrive\Máy tính\Do_an_QLTV-master\Do_an_QLTV-master\Quan_ly_thu_vien\MainForm\obj\Debug\MainForm.Forms.UserBorrowed.resources
+C:\Users\anhng\OneDrive\Máy tính\Do_an_QLTV-master\Do_an_QLTV-master\Quan_ly_thu_vien\MainForm\obj\Debug\MainForm.Forms.UserReturned.resources
 C:\Users\anhng\OneDrive\Documents\GitHub\Do_an_QLTV\Quan_ly_thu_vien\MainForm\bin\Debug\MainForm.exe.config
 C:\Users\anhng\OneDrive\Documents\GitHub\Do_an_QLTV\Quan_ly_thu_vien\MainForm\bin\Debug\MainForm.exe
 C:\Users\anhng\OneDrive\Documents\GitHub\Do_an_QLTV\Quan_ly_thu_vien\MainForm\bin\Debug\MainForm.pdb
@@ -30,16 +79,18 @@ C:\Users\anhng\OneDrive\Documents\GitHub\Do_an_QLTV\Quan_ly_thu_vien\MainForm\bi
 C:\Users\anhng\OneDrive\Documents\GitHub\Do_an_QLTV\Quan_ly_thu_vien\MainForm\bin\Debug\Save.exe.config
 C:\Users\anhng\OneDrive\Documents\GitHub\Do_an_QLTV\Quan_ly_thu_vien\MainForm\obj\Debug\MainForm.csproj.AssemblyReference.cache
 C:\Users\anhng\OneDrive\Documents\GitHub\Do_an_QLTV\Quan_ly_thu_vien\MainForm\obj\Debug\MainForm.csproj.SuggestedBindingRedirects.cache
-C:\Users\anhng\OneDrive\Documents\GitHub\Do_an_QLTV\Quan_ly_thu_vien\MainForm\obj\Debug\MainForm.ADDBOOK.resources
-C:\Users\anhng\OneDrive\Documents\GitHub\Do_an_QLTV\Quan_ly_thu_vien\MainForm\obj\Debug\MainForm.DoiMatKhau.resources
+C:\Users\anhng\OneDrive\Documents\GitHub\Do_an_QLTV\Quan_ly_thu_vien\MainForm\obj\Debug\MainForm.AddBooks.resources
+C:\Users\anhng\OneDrive\Documents\GitHub\Do_an_QLTV\Quan_ly_thu_vien\MainForm\obj\Debug\MainForm.ChangePass.resources
 C:\Users\anhng\OneDrive\Documents\GitHub\Do_an_QLTV\Quan_ly_thu_vien\MainForm\obj\Debug\MainForm.Main.resources
 C:\Users\anhng\OneDrive\Documents\GitHub\Do_an_QLTV\Quan_ly_thu_vien\MainForm\obj\Debug\MainForm.Personal_Information.resources
+C:\Users\anhng\OneDrive\Documents\GitHub\Do_an_QLTV\Quan_ly_thu_vien\MainForm\obj\Debug\MainForm.Forms.UserBorrowed.resources
+C:\Users\anhng\OneDrive\Documents\GitHub\Do_an_QLTV\Quan_ly_thu_vien\MainForm\obj\Debug\MainForm.Forms.UserReturned.resources
 C:\Users\anhng\OneDrive\Documents\GitHub\Do_an_QLTV\Quan_ly_thu_vien\MainForm\obj\Debug\MainForm.Properties.Resources.resources
-C:\Users\anhng\OneDrive\Documents\GitHub\Do_an_QLTV\Quan_ly_thu_vien\MainForm\obj\Debug\MainForm.QuanLyMuon.resources
-C:\Users\anhng\OneDrive\Documents\GitHub\Do_an_QLTV\Quan_ly_thu_vien\MainForm\obj\Debug\MainForm.Themnguoidoc.resources
+C:\Users\anhng\OneDrive\Documents\GitHub\Do_an_QLTV\Quan_ly_thu_vien\MainForm\obj\Debug\MainForm.Borrowed_Manager.resources
 C:\Users\anhng\OneDrive\Documents\GitHub\Do_an_QLTV\Quan_ly_thu_vien\MainForm\obj\Debug\MainForm.Timnguoidoc.resources
 C:\Users\anhng\OneDrive\Documents\GitHub\Do_an_QLTV\Quan_ly_thu_vien\MainForm\obj\Debug\MainForm.UserBorrowBook.resources
 C:\Users\anhng\OneDrive\Documents\GitHub\Do_an_QLTV\Quan_ly_thu_vien\MainForm\obj\Debug\MainForm.UserReturnBook.resources
+C:\Users\anhng\OneDrive\Documents\GitHub\Do_an_QLTV\Quan_ly_thu_vien\MainForm\obj\Debug\MainForm.DanhSachTK.resources
 C:\Users\anhng\OneDrive\Documents\GitHub\Do_an_QLTV\Quan_ly_thu_vien\MainForm\obj\Debug\MainForm.XEMSACH.resources
 C:\Users\anhng\OneDrive\Documents\GitHub\Do_an_QLTV\Quan_ly_thu_vien\MainForm\obj\Debug\MainForm.csproj.GenerateResource.cache
 C:\Users\anhng\OneDrive\Documents\GitHub\Do_an_QLTV\Quan_ly_thu_vien\MainForm\obj\Debug\MainForm.csproj.CoreCompileInputs.cache

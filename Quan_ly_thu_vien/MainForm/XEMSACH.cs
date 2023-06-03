@@ -17,14 +17,28 @@ namespace MainForm
         dbms sql = new dbms();
         //SqlDataAdapter adapter = new SqlDataAdapter();
         DataTable table = new DataTable();
+
+        //linq
+        linqDataContext dt = new linqDataContext();
         public XEMSACH()
         {
             InitializeComponent();
         }
 
-        private void XEMSACH_Load(object sender, EventArgs e)
+        private void XEMSACH_Load_1(object sender, EventArgs e)
         {
+            //linqDataContext dt = new linqDataContext();
             try
+            {
+                dataGridView2.DataSource = dt.Books.Select(p => p);
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message, "error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            /*try
             {
                 sql.cn.Open();
                 dataGridView2.DataSource = sql.getData();
@@ -41,8 +55,7 @@ namespace MainForm
             {
                 MessageBox.Show(ex.Message, "error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
-            }
-
+            }*/
         }
 
         //xem toàn bộ sách
@@ -74,9 +87,21 @@ namespace MainForm
         }
 
         //xem sách theo tên
-        private void button1_Click(object sender, EventArgs e)
+        private void button1_Click_1(object sender, EventArgs e)
         {
             try
+            {
+                string find = findb.Text;
+                dataGridView2.DataSource = from u in dt.Books
+                                           where u.name == find
+                                           select u;
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message, "error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            /*try
             {
                 sql.cn.Open();
                 loaddata1();
@@ -91,11 +116,12 @@ namespace MainForm
             {
                 MessageBox.Show(ex.Message, "error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
-            }
+            }*/
         }
         void loaddata1()
         {
-            try
+            dataGridView2.DataSource = dt.Books.Select(p => p);
+            /*try
             {
                 string ten = findb.Text;
                 dataGridView2.DataSource = sql.getDatawithvalue(ten);
@@ -109,14 +135,24 @@ namespace MainForm
             {
                 MessageBox.Show(ex.Message, "error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
-            }
+            }*/
 
         }
 
         //quay lại xem toàn bộ sách
-        private void backb_Click_1(object sender, EventArgs e)
+        private void backb_Click(object sender, EventArgs e)
         {
             try
+            {
+                dataGridView2.DataSource = dt.Books.Select(p => p);
+
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message, "error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            /*try
             {
                 sql.cn.Open();
                 dataGridView2.DataSource = sql.getData();
@@ -131,20 +167,26 @@ namespace MainForm
             {
                 MessageBox.Show(ex.Message, "error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
-            }
+            }*/
         }
 
-        //tắt form
-        private void cancel_Click_1(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
+        
 
         //cập nhật
-        private void update_Click_1(object sender, EventArgs e)
+        
+        private void update_Click(object sender, EventArgs e)
         {
-            try
+            Book b = dt.Books.FirstOrDefault(p => p.bookID.Equals(idb.Text));
+            b.name = nameb.Text;
+            b.title = titleb.Text;
+            b.author = tacgiab.Text;
+            b.year_published = int.Parse(namb.Text);
+            b.quantity = int.Parse(slb.Text);
+
+            dt.SubmitChanges();
+
+            dataGridView2.DataSource = dt.Books.Select(p => p);
+            /*try
             {
                 if (idb.Text == "")
                 {
@@ -155,14 +197,14 @@ namespace MainForm
 
                     int id = int.Parse(idb.Text);
                     string name = nameb.Text;
-                    int count = int.Parse(countb.Text);
-                    string tgia = writter.Text;
-                    string tl = type.Text;
-                    string date = dateTimePicker1.Text;
-                    string gia = cost.Text;
+                    string title = titleb.Text;
+                    string tg=tacgiab.Text;
+                    int nam = int.Parse(namb.Text);
+                    int sl=int.Parse(slb.Text);
+
 
                     sql.cn.Open();
-                    sql.update(id, name, count, tgia, tl, date, gia);
+                    sql.update(id, name, title,tg,nam,sl);
                     sql.getData();
                     sql.cn.Close();
 
@@ -178,14 +220,25 @@ namespace MainForm
             {
                 MessageBox.Show(ex.Message, "error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
-            }
+            }*/
         }
 
-
         //xóa
-        private void delete_Click_1(object sender, EventArgs e)
+        private void delete_Click(object sender, EventArgs e)
         {
             try
+            {
+                Book b = dt.Books.FirstOrDefault(p => p.bookID.Equals(dataGridView2.CurrentRow.Cells[0].Value));
+                dt.Books.DeleteOnSubmit(b);
+                dt.SubmitChanges();
+                dataGridView2.DataSource = dt.Books.Select(p => p);
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message, "error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            /*try
             {
                 if (idb.Text == "")
                 {
@@ -211,9 +264,23 @@ namespace MainForm
             {
                 MessageBox.Show(ex.Message, "error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
-            }
+            }*/
         }
 
+        private void cancel_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
 
+        private void dataGridView2_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            idb.Text = dataGridView2.CurrentRow.Cells[0].Value.ToString();
+            idb.Enabled = false;
+            nameb.Text = dataGridView2.CurrentRow.Cells[1].Value.ToString();
+            titleb.Text = dataGridView2.CurrentRow.Cells[2].Value.ToString();
+            tacgiab.Text = dataGridView2.CurrentRow.Cells[3].Value.ToString();
+            namb.Text = dataGridView2.CurrentRow.Cells[4].Value.ToString();
+            slb.Text = dataGridView2.CurrentRow.Cells[5].Value.ToString();
+        }
     }
 }

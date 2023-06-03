@@ -27,7 +27,7 @@ namespace Login_form
             {
                 MessageBox.Show("Vui lòng nhập đầy đủ thông tin", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
-            }            
+            }
             try
             {
                 using (db.con)
@@ -39,7 +39,7 @@ namespace Login_form
                     cmd.Parameters.AddWithValue("@scode", txtStudent_Code.Text);
                     cmd.Parameters.AddWithValue("@add", txtAddress.Text);
                     cmd.Parameters.AddWithValue("@pnum", txtPhone_Num.Text);
-                                        
+
                     SqlDataReader rd = cmd.ExecuteReader();
                     Dang_Nhap dn = new Dang_Nhap();
                     //Dang_Ki dk = new Dang_Ki();
@@ -100,7 +100,6 @@ namespace Login_form
             Save.Button.ButtonServices.CloseForm(this);
             Dang_Nhap dn = new Dang_Nhap();
             dn.Show();
-
         }
     }
 }
