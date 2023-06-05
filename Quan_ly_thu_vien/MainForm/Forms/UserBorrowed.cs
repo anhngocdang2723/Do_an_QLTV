@@ -29,9 +29,8 @@ namespace MainForm.Forms
                 cmd.Parameters.AddWithValue("@Username", Save.User_Pass.uname);
                 int readerID = (int)cmd.ExecuteScalar();
 
-
                 //select tt ra gridview
-                string SelectQuery = "Select r.rname as N'Tên độc giả', b.bname as N'Tên sách', br.borrow_date as N'Ngày mượn', br.due_date as N'Ngày trả', br.quantity_borrowed as N'Số lượng' \r\n FROM Borrows br \r\n LEFT JOIN Readers r ON r.readerID = br.readerID \r\n LEFT JOIN Books b ON b.bookID = br.bookID \r\n WHERE br.readerID LIKE @rID";
+                string SelectQuery = "Select r.rname as N'Tên độc giả', b.bname as N'Tên sách', br.borrow_date as N'Ngày mượn', br.due_date as N'Ngày trả', br.quantity_borrowed as N'Số lượng'FROM Borrows br \r\n LEFT JOIN Readers r ON r.readerID = br.readerID \r\n LEFT JOIN Books b ON b.bookID = br.bookID \r\n WHERE br.readerID LIKE @rID and br.is_deleted = 'false'";
                 SqlCommand command = new SqlCommand(SelectQuery, db.con);
                 command.Parameters.AddWithValue("@rID", readerID);
                 SqlDataReader dr = command.ExecuteReader();

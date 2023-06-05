@@ -372,7 +372,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(126, 31);
             this.button1.TabIndex = 3;
-            this.button1.Text = "Sách đã mượn";
+            this.button1.Text = "Sách đang mượn";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -574,7 +574,7 @@
             this.tHÊMSÁCHToolStripMenuItem.Image = global::MainForm.Properties.Resources.icons8_add_book_48;
             this.tHÊMSÁCHToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.tHÊMSÁCHToolStripMenuItem.Name = "tHÊMSÁCHToolStripMenuItem";
-            this.tHÊMSÁCHToolStripMenuItem.Size = new System.Drawing.Size(192, 56);
+            this.tHÊMSÁCHToolStripMenuItem.Size = new System.Drawing.Size(214, 56);
             this.tHÊMSÁCHToolStripMenuItem.Text = "THÊM SÁCH";
             this.tHÊMSÁCHToolStripMenuItem.Click += new System.EventHandler(this.tHÊMSÁCHToolStripMenuItem_Click);
             // 
@@ -583,7 +583,7 @@
             this.xEMSÁCHToolStripMenuItem.Image = global::MainForm.Properties.Resources.icons8_return_book_50;
             this.xEMSÁCHToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.xEMSÁCHToolStripMenuItem.Name = "xEMSÁCHToolStripMenuItem";
-            this.xEMSÁCHToolStripMenuItem.Size = new System.Drawing.Size(192, 56);
+            this.xEMSÁCHToolStripMenuItem.Size = new System.Drawing.Size(214, 56);
             this.xEMSÁCHToolStripMenuItem.Text = "XEM SÁCH";
             this.xEMSÁCHToolStripMenuItem.Click += new System.EventHandler(this.xEMSÁCHToolStripMenuItem_Click);
             // 

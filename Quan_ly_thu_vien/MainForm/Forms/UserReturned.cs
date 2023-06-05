@@ -30,11 +30,12 @@ namespace MainForm.Forms
 
 
                 //select tt ra gridview
-                string SelectQuery = "Select r.rname as N'Tên độc giả', br.borrow_date as N'Ngày mượn', rt.return_date as N'Ngày trả', rt.quantity_returned as N'Số lượng trả'" +
+                string SelectQuery = "Select r.rname as N'Tên độc giả', b.bname as N'Tên sách', br.borrow_date as N'Ngày mượn', rt.return_date as N'Ngày trả', rt.quantity_returned as N'Số lượng trả'" +
                                      "FROM Returns rt " +
                                      "Join Borrows br on br.borrowID = rt.borrowID " +
                                      "full outer Join Readers r on br.readerID = r.readerID " +
-                                     "WHERE r.readerID LIKE @rID";
+                                     "full outer Join Books b on b.bookID = br.bookID " +
+                                     "WHERE r.readerID LIKE @rID and is_deleted = 'true'";
                 SqlCommand command = new SqlCommand(SelectQuery, db.con);
                 command.Parameters.AddWithValue("@rID", readerID);
                 SqlDataReader dr = command.ExecuteReader();

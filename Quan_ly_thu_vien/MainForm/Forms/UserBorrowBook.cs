@@ -34,7 +34,8 @@ namespace MainForm
             */
             try
             {
-                string sqlSelect = "Select B.bookID as N'Mã sách', B.bname as N'Tên sách', B.title as N'Thể loại', B.author as N'Tác giả',B.year_published as N'Năm phát hành', B.quantity as N'Số lượng'\r\nFrom Books B";
+                string sqlSelect = "Select B.bookID as N'Mã sách', B.bname as N'Tên sách', B.title as N'Thể loại', B.author as N'Tác giả',B.year_published as N'Năm phát hành', B.quantity as N'Số lượng'" +
+                                    "From Books B";
                 SqlCommand cmd = new SqlCommand(sqlSelect, db.con);
                 SqlDataReader dr = cmd.ExecuteReader();
                 DataTable dt = new DataTable();
@@ -95,7 +96,7 @@ namespace MainForm
                 DateTime returnDate = dateReturn.Value;
                 int quantity = int.Parse(txtQuantity.Text);
 
-                string insertQuery = "INSERT INTO borrows ( bookID,  readerID, borrow_date, due_date, quantity_borrowed) VALUES ( @bookID,  @readerID,  @borrowDate, @dueDate, @quantity_borrowed)";
+                string insertQuery = "INSERT INTO borrows ( bookID,  readerID, borrow_date, due_date, quantity_borrowed, is_deleted) VALUES ( @bookID,  @readerID,  @borrowDate, @dueDate, @quantity_borrowed, 'false')";
                 SqlCommand insertCommand = new SqlCommand(insertQuery, db.con);
 
                 insertCommand.Parameters.AddWithValue("@bookID", bookID);

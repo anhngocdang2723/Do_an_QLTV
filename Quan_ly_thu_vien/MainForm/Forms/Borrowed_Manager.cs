@@ -30,7 +30,7 @@ namespace MainForm
 
         public void LoadData()
         {
-            string sqlSelect = "Select Br.borrowID as N'Mã phiếu', R.readerID as N'Mã độc giả', R.rname as N'Tên độc giả', B.bookID as N'Mã sách', B.bname as N'Tên sách', Br.borrow_date as N'Ngày mượn', Br.due_date as N'Ngày đến hạn', Br.quantity_borrowed as N'Số lượng'\r\nFrom Borrows Br\r\nJoin Books B on B.bookID = Br.bookID\r\nJoin Readers R On R.ReaderID = Br.readerID";
+            string sqlSelect = "Select Br.borrowID as N'Mã phiếu', R.readerID as N'Mã độc giả', R.rname as N'Tên độc giả', B.bookID as N'Mã sách', B.bname as N'Tên sách', Br.borrow_date as N'Ngày mượn', Br.due_date as N'Ngày đến hạn', Br.quantity_borrowed as N'Số lượng'\r\nFrom Borrows Br\r\nJoin Books B on B.bookID = Br.bookID\r\nJoin Readers R On R.ReaderID = Br.readerID \r\nWhere is_deleted = 'false'";
             SqlCommand cmd = new SqlCommand(sqlSelect, db.con);
             SqlDataReader dr = cmd.ExecuteReader();
             DataTable dt = new DataTable();
@@ -73,7 +73,7 @@ namespace MainForm
                 DateTime borrowDate = dateBorrow.Value;
                 DateTime dueDate = dateReturn.Value;
 
-                string insertQuery = "INSERT INTO borrows ( bookID,  readerID, borrow_date, due_date, quantity_borrowed) VALUES ( @bookID,  @readerID,  @borrowDate, @dueDate, @quantity_borrowed)";
+                string insertQuery = "INSERT INTO borrows ( bookID,  readerID, borrow_date, due_date, quantity_borrowed, is_deleted) VALUES ( @bookID,  @readerID,  @borrowDate, @dueDate, @quantity_borrowed, 'false')";
                 SqlCommand insertCommand = new SqlCommand(insertQuery, db.con);
 
                 insertCommand.Parameters.AddWithValue("@borrowID", borrowID);
@@ -113,7 +113,7 @@ namespace MainForm
         {
             try
             {
-                string deleteQuery = "delete from borrows where borrowID = '" + txtBorrowID.Text + "'";
+                string deleteQuery = "update borrows set is_deleted = 'true' where borrowID = '" + txtBorrowID.Text + "'";
                 SqlCommand deleteCommand = new SqlCommand(deleteQuery, db.con);
                 deleteCommand.ExecuteNonQuery();
                 txtBorrowID.Clear();
