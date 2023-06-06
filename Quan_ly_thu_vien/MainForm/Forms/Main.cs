@@ -154,8 +154,8 @@ namespace MainForm
 
         private void xEMSÁCHToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            XEMSACH xEMSACH = new XEMSACH();
-            xEMSACH.Show();
+            MainForm.ViewBooks viewBooks = new ViewBooks();
+            viewBooks.Show();
         }
 
         private void thêmNgườiDùngToolStripMenuItem_Click(object sender, EventArgs e)

@@ -22,14 +22,11 @@ namespace MainForm.Forms
         {
             try
             {
-                //lấy readerID của tk đang login
                 string query = "SELECT readerID FROM accounts WHERE username = @Username";
                 SqlCommand cmd = new SqlCommand(query, db.con);
                 cmd.Parameters.AddWithValue("@Username", Save.User_Pass.uname);
                 int readerID = (int)cmd.ExecuteScalar();
 
-
-                //select tt ra gridview
                 string SelectQuery = "Select r.rname as N'Tên độc giả', b.bname as N'Tên sách', br.borrow_date as N'Ngày mượn', rt.return_date as N'Ngày trả', rt.quantity_returned as N'Số lượng trả'" +
                                      "FROM Returns rt " +
                                      "Join Borrows br on br.borrowID = rt.borrowID " +

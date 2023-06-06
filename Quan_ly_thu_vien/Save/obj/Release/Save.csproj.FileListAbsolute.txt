@@ -1,0 +1,10 @@
+C:\Users\anhng\OneDrive\Documents\GitHub\Do_an_QLTV\Quan_ly_thu_vien\Save\bin\Release\Save.exe.config
+C:\Users\anhng\OneDrive\Documents\GitHub\Do_an_QLTV\Quan_ly_thu_vien\Save\bin\Release\Save.exe
+C:\Users\anhng\OneDrive\Documents\GitHub\Do_an_QLTV\Quan_ly_thu_vien\Save\bin\Release\Save.pdb
+C:\Users\anhng\OneDrive\Documents\GitHub\Do_an_QLTV\Quan_ly_thu_vien\Save\obj\Release\Save.csproj.AssemblyReference.cache
+C:\Users\anhng\OneDrive\Documents\GitHub\Do_an_QLTV\Quan_ly_thu_vien\Save\obj\Release\Save.csproj.SuggestedBindingRedirects.cache
+C:\Users\anhng\OneDrive\Documents\GitHub\Do_an_QLTV\Quan_ly_thu_vien\Save\obj\Release\Save.Properties.Resources.resources
+C:\Users\anhng\OneDrive\Documents\GitHub\Do_an_QLTV\Quan_ly_thu_vien\Save\obj\Release\Save.csproj.GenerateResource.cache
+C:\Users\anhng\OneDrive\Documents\GitHub\Do_an_QLTV\Quan_ly_thu_vien\Save\obj\Release\Save.csproj.CoreCompileInputs.cache
+C:\Users\anhng\OneDrive\Documents\GitHub\Do_an_QLTV\Quan_ly_thu_vien\Save\obj\Release\Save.exe
+C:\Users\anhng\OneDrive\Documents\GitHub\Do_an_QLTV\Quan_ly_thu_vien\Save\obj\Release\Save.pdb

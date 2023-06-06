@@ -17,23 +17,33 @@ namespace MainForm
         Save.Share_DbServices db = new Save.Share_DbServices();
         public void LoadData()
         {
-            //db.con.Open();
-            /*
-            var query = from Books in db.con.Books
-                        select new
-                        {
-                            Mã_sách = Books.bookID,
-                            Tên_sách = Books.bname,
-                            Thể_Loại = Books.title,
-                            Tác_Giả = Books.author,
-                            Năm_Phát_Hành = Books.year_publish,
-                            Số_lượng = Books.quantity
-                        };
-            DataTable dt = query.CopytodataTable();
-            dataGridView1.DataSource = dt;
-            */
-            try
+            try 
             {
+                using (db.con)//LINQ
+                {
+                    var booksQuery = from b in db.Books
+                                     select new
+                                     {
+                                         MaSach = b.BookID,
+                                         TenSach = b.BName,
+                                         TheLoai = b.Title,
+                                         TacGia = b.Author,
+                                         NamPhatHanh = b.YearPublished,
+                                         SoLuong = b.Quantity
+                                     };
+
+                    dataGridView1.DataSource = booksQuery.ToList();
+
+                    string username = Save.User_Pass.uname;
+                    int readerID = db.Accounts
+                        .Where(a => a.Username == username)
+                        .Select(a => a.ReaderID)
+                        .FirstOrDefault();
+
+                    txtReaderID.Text = readerID.ToString();
+                }
+
+                /*ADO.NET
                 string sqlSelect = "Select B.bookID as N'Mã sách', B.bname as N'Tên sách', B.title as N'Thể loại', B.author as N'Tác giả',B.year_published as N'Năm phát hành', B.quantity as N'Số lượng'" +
                                     "From Books B";
                 SqlCommand cmd = new SqlCommand(sqlSelect, db.con);
@@ -50,17 +60,15 @@ namespace MainForm
                 int readerID = (int)command.ExecuteScalar();
                 //          db.con.Close();
                 txtReaderID.Text = readerID.ToString();
+                */
 
                 comboBox1.Text = "Tên sách";
-
                 dataGridView1.Columns[0].Width = 60;
                 dataGridView1.Columns[1].Width = 220;
                 dataGridView1.Columns[2].Width = 100;
                 dataGridView1.Columns[3].Width = 170;
                 dataGridView1.Columns[4].Width = 100;
                 dataGridView1.Columns[5].Width = 60;
-
-
             }
             catch
             {
@@ -96,6 +104,29 @@ namespace MainForm
                 DateTime returnDate = dateReturn.Value;
                 int quantity = int.Parse(txtQuantity.Text);
 
+                using (db.con) // Replace 'YourDatabaseContext' with your actual database context
+                {
+                    var borrow = new Borrows
+                    {
+                        BookID = bookID,
+                        ReaderID = readerID,
+                        BorrowDate = borrowDate,
+                        DueDate = returnDate,
+                        QuantityBorrowed = quantity,
+                        IsDeleted = false
+                    };
+
+                    db.Borrows.Add(borrow);
+                    db.SaveChanges();
+                }
+
+                /* ADO.NET
+                int readerID = int.Parse(txtReaderID.Text);
+                int bookID = int.Parse(txtBookID.Text);
+                DateTime borrowDate = DateTime.Now;
+                DateTime returnDate = dateReturn.Value;
+                int quantity = int.Parse(txtQuantity.Text);
+
                 string insertQuery = "INSERT INTO borrows ( bookID,  readerID, borrow_date, due_date, quantity_borrowed, is_deleted) VALUES ( @bookID,  @readerID,  @borrowDate, @dueDate, @quantity_borrowed, 'false')";
                 SqlCommand insertCommand = new SqlCommand(insertQuery, db.con);
 
@@ -105,9 +136,8 @@ namespace MainForm
                 insertCommand.Parameters.AddWithValue("@dueDate", returnDate);
                 insertCommand.Parameters.AddWithValue("@quantity_borrowed", quantity);
                 insertCommand.ExecuteNonQuery();
-
+                */
                 LoadData();
-
                 MessageBox.Show("Mượn sách thành công!");
 
                 txtBookID.Clear();

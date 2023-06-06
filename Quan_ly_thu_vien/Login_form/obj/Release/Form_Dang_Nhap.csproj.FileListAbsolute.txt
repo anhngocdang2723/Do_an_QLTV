@@ -1,0 +1,8 @@
+C:\Users\anhng\OneDrive\Documents\GitHub\Do_an_QLTV\Quan_ly_thu_vien\Login_form\obj\Release\Form_Dang_Nhap.csproj.AssemblyReference.cache
+C:\Users\anhng\OneDrive\Documents\GitHub\Do_an_QLTV\Quan_ly_thu_vien\Login_form\obj\Release\Form_Dang_Nhap.csproj.SuggestedBindingRedirects.cache
+C:\Users\anhng\OneDrive\Documents\GitHub\Do_an_QLTV\Quan_ly_thu_vien\Login_form\obj\Release\Login_form.Dang_Ki.resources
+C:\Users\anhng\OneDrive\Documents\GitHub\Do_an_QLTV\Quan_ly_thu_vien\Login_form\obj\Release\Login_form.Dang_Nhap.resources
+C:\Users\anhng\OneDrive\Documents\GitHub\Do_an_QLTV\Quan_ly_thu_vien\Login_form\obj\Release\Login_form.Dien_Thong_Tin.resources
+C:\Users\anhng\OneDrive\Documents\GitHub\Do_an_QLTV\Quan_ly_thu_vien\Login_form\obj\Release\Login_form.Properties.Resources.resources
+C:\Users\anhng\OneDrive\Documents\GitHub\Do_an_QLTV\Quan_ly_thu_vien\Login_form\obj\Release\Form_Dang_Nhap.csproj.GenerateResource.cache
+C:\Users\anhng\OneDrive\Documents\GitHub\Do_an_QLTV\Quan_ly_thu_vien\Login_form\obj\Release\Form_Dang_Nhap.csproj.CoreCompileInputs.cache

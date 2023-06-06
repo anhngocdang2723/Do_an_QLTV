@@ -12,7 +12,7 @@ using System.Windows.Forms;
 
 namespace MainForm
 {
-    public partial class XEMSACH : Form
+    public partial class ViewBooks : Form
     {
         dbms sql = new dbms();
         //SqlDataAdapter adapter = new SqlDataAdapter();
@@ -20,7 +20,7 @@ namespace MainForm
 
         //linq
         linqDataContext dt = new linqDataContext();
-        public XEMSACH()
+        public ViewBooks()
         {
             InitializeComponent();
         }
@@ -32,7 +32,7 @@ namespace MainForm
             {
                 dataGridView2.DataSource = dt.Books.Select(p => p);
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 MessageBox.Show(ex.Message, "error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
@@ -96,7 +96,7 @@ namespace MainForm
                                            where u.name == find
                                            select u;
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 MessageBox.Show(ex.Message, "error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
@@ -147,7 +147,7 @@ namespace MainForm
                 dataGridView2.DataSource = dt.Books.Select(p => p);
 
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 MessageBox.Show(ex.Message, "error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
@@ -170,10 +170,10 @@ namespace MainForm
             }*/
         }
 
-        
+
 
         //cập nhật
-        
+
         private void update_Click(object sender, EventArgs e)
         {
             Book b = dt.Books.FirstOrDefault(p => p.bookID.Equals(idb.Text));
@@ -233,7 +233,7 @@ namespace MainForm
                 dt.SubmitChanges();
                 dataGridView2.DataSource = dt.Books.Select(p => p);
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 MessageBox.Show(ex.Message, "error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;

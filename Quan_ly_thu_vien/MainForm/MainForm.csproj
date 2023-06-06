@@ -48,6 +48,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\AddBooks.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -134,11 +140,11 @@
     <Compile Include="Forms\UserReturnBook.Designer.cs">
       <DependentUpon>UserReturnBook.cs</DependentUpon>
     </Compile>
-    <Compile Include="XEMSACH.cs">
+    <Compile Include="ViewBooks.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="XEMSACH.Designer.cs">
-      <DependentUpon>XEMSACH.cs</DependentUpon>
+    <Compile Include="ViewBooks.Designer.cs">
+      <DependentUpon>ViewBooks.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Forms\AddBooks.resx">
       <DependentUpon>AddBooks.cs</DependentUpon>
@@ -182,9 +188,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\ViewUsers_Accounts.resx">
       <DependentUpon>ViewUsers_Accounts.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="XEMSACH.resx">
-      <DependentUpon>XEMSACH.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="App.config" />
     <None Include="linq.dbml">

@@ -23,13 +23,39 @@ namespace MainForm.Forms
         {
             try
             {
-                //lấy readerID của tk đang login
+                string username = Save.User_Pass.uname;
+                //LINQ
+                using (db.con)
+                {
+                    var readerID = (
+                        from acc in Accounts
+                        where acc.Username == username
+                        select acc.readerID
+                    ).FirstOrDefault();
+
+                    var query = from br in db.Borrows
+                                join r in db.Readers on br.ReaderID equals r.ReaderID
+                                join b in db.Books on br.BookID equals b.BookID
+                                where br.ReaderID == readerID && br.IsDeleted == false
+                                select new
+                                {
+                                    TenDocGia = r.RName,
+                                    TenSach = b.BName,
+                                    NgayMuon = br.BorrowDate,
+                                    NgayTra = br.DueDate,
+                                    SoLuong = br.QuantityBorrowed
+                                };
+
+                    dataGridView1.DataSource = query.ToList();
+                }
+
+                //
+                /*
                 string query = "SELECT readerID FROM accounts WHERE username = @Username";
                 SqlCommand cmd = new SqlCommand(query, db.con);
                 cmd.Parameters.AddWithValue("@Username", Save.User_Pass.uname);
                 int readerID = (int)cmd.ExecuteScalar();
 
-                //select tt ra gridview
                 string SelectQuery = "Select r.rname as N'Tên độc giả', b.bname as N'Tên sách', br.borrow_date as N'Ngày mượn', br.due_date as N'Ngày trả', br.quantity_borrowed as N'Số lượng'FROM Borrows br \r\n LEFT JOIN Readers r ON r.readerID = br.readerID \r\n LEFT JOIN Books b ON b.bookID = br.bookID \r\n WHERE br.readerID LIKE @rID and br.is_deleted = 'false'";
                 SqlCommand command = new SqlCommand(SelectQuery, db.con);
                 command.Parameters.AddWithValue("@rID", readerID);
@@ -37,6 +63,7 @@ namespace MainForm.Forms
                 DataTable dt = new DataTable();
                 dt.Load(dr);
                 dataGridView1.DataSource = dt;
+                */
             }
             catch
             {

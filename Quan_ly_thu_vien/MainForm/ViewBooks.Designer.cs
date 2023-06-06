@@ -1,10 +1,8 @@
-﻿using System.Drawing;
-using System;
-using System.Windows.Forms;
+﻿using System.Windows.Forms;
 
 namespace MainForm
 {
-    partial class XEMSACH
+    partial class ViewBooks : Form
     {
         /// <summary>
         /// Required designer variable.
@@ -32,6 +30,7 @@ namespace MainForm
         /// </summary>
         private void InitializeComponent()
         {
+
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -383,7 +382,6 @@ namespace MainForm
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
-
         }
 
         #endregion

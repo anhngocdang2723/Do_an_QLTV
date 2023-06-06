@@ -91,7 +91,6 @@ C:\Users\anhng\OneDrive\Documents\GitHub\Do_an_QLTV\Quan_ly_thu_vien\MainForm\ob
 C:\Users\anhng\OneDrive\Documents\GitHub\Do_an_QLTV\Quan_ly_thu_vien\MainForm\obj\Debug\MainForm.UserBorrowBook.resources
 C:\Users\anhng\OneDrive\Documents\GitHub\Do_an_QLTV\Quan_ly_thu_vien\MainForm\obj\Debug\MainForm.UserReturnBook.resources
 C:\Users\anhng\OneDrive\Documents\GitHub\Do_an_QLTV\Quan_ly_thu_vien\MainForm\obj\Debug\MainForm.DanhSachTK.resources
-C:\Users\anhng\OneDrive\Documents\GitHub\Do_an_QLTV\Quan_ly_thu_vien\MainForm\obj\Debug\MainForm.XEMSACH.resources
 C:\Users\anhng\OneDrive\Documents\GitHub\Do_an_QLTV\Quan_ly_thu_vien\MainForm\obj\Debug\MainForm.csproj.GenerateResource.cache
 C:\Users\anhng\OneDrive\Documents\GitHub\Do_an_QLTV\Quan_ly_thu_vien\MainForm\obj\Debug\MainForm.csproj.CoreCompileInputs.cache
 C:\Users\anhng\OneDrive\Documents\GitHub\Do_an_QLTV\Quan_ly_thu_vien\MainForm\obj\Debug\MainForm.csproj.CopyComplete
